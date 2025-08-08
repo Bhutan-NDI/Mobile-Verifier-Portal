@@ -54,7 +54,7 @@ const Sidebar = ({ onToggle }) => {
 
         {/* Logo Section */}
         <div
-          className={`flex items-center py-4 border-b border-gray-200 cursor-pointer hover:bg-gray-50 transition-colors duration-200 ${isCollapsed ? 'justify-center' : 'justify-start pl-5'}`}
+          className={`flex items-center py-4  border-b border-gray-200 cursor-pointer hover:bg-gray-50 transition-colors duration-200 ${isCollapsed ? 'justify-center' : 'justify-start pl-5'}`}
           onClick={handleLogoClick}
         >
           {shouldExpand ? (
