@@ -1,5 +1,5 @@
 import { File, Plus, Search, X } from "lucide-react";
-import { useEffect, useState, useCallback, useRef } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import TableComponent from "../components/layout/TableComponent";
@@ -236,21 +236,6 @@ const FileUploadPage = () => {
         </button>
       ),
       enableSorting: false,
-    },
-    {
-      header: "Actions",
-      accessorKey: "actions",
-      cell: ({ row }) => (
-        <div className="flex justify-start gap-4 px-1">
-          <button
-            className="inline-flex items-center text-red-600 hover:text-red-800 transition-colors text-sm font-medium"
-            onClick={() => openDeleteModal(row.original)}
-          >
-            <X size={16} className="mr-1" />
-            Delete
-          </button>
-        </div>
-      ),
     }
   ];
 

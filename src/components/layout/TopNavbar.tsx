@@ -11,7 +11,7 @@ const TopNavbar: React.FC = () => {
     <>
       {/* Main Top Navigation */}
       <div
-      className= "bg-white-400 border-b border-gray-200 ml-0 py-7 p-4 mb-1 flex justify-between items-center sticky top-0 z-10 transition-all duration-300">
+      className= "bg-white-400 border-b border-gray-200 ml-0 p-[1.90rem] p-10 mb-2 flex justify-between items-center sticky top-0 z-10 transition-all duration-300">
         {/* Title moved completely left with no extra spacing */}
         <h1 className="text-xl font-bold flex items-center">
           <span className="bg-gradient-to-r pl-4 from-emerald-600 to-emerald-700 bg-clip-text text-transparent">
