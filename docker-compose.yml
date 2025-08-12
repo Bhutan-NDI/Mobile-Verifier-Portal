@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  mv-portal-service:
+    image: ${IMAGE_NAME}
+    container_name: mv-portal-service
+    ports:
+      - "3015:80"
+    env_file:
+      - .env
+    restart: unless-stopped
